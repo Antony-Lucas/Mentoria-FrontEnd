@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA Compatible" content="ie-edge">
+    <title>Formulário</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <p>Formulário</p>
+    </header>
+    <form action="index.php" method="POST">
+        <div>
+            <label for="fnome">Nome:</label>
+            <input type="text">
+        </div>
+        
+        <div>
+            <label for="fidade">Idade:</label>
+            <input type="text">
+        </div>
+
+        <div>
+            <label for="fcpf">CPF</label>
+            <input type="text">
+        </div>
+
+       <div>
+           <label for="fsexo">Sexo:</label>
+       </br>
+            <label for="frbmasc">Masculino</label>
+            <input type="radio" name="frbmasc" id="rbmasc">
+            <label for="frbfem">Feminino</label>
+            <input type="radio" name="frbfem" id="rbmasc">
+       </div>
+
+        <div>
+            <label for="festado">Estado</label>
+            <select name="Estados" id="select_state">
+                <option value="">Selecione um Estado</option>
+                <option value="PA">Acre</option>
+                <option value="AM">Amapá</option>
+                <option value="AZ">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PN">Pernambuco</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RD">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="TO">Tocantins</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="fsenha">Senha:</label>
+            <input type="text">
+        </div>
+
+        <div>
+            <label for="fcsenha">Confirmar senha:</label>
+            <input type="text">
+        </div>
+
+        <div>
+            <input type="submit">
+        </div>
+    </form>
+</body>
+</html>

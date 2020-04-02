@@ -1,0 +1,40 @@
+@import url(https://fonts.googleapis.com/css?family=Baloo+Thambi+2:regular,500,600,700,800);
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Baloo Thambi 2";
+}
+
+header{
+    background-color: rgb(253, 80, 49);
+    display: absolute;
+    padding: 2em;
+    transition: 0.5s;
+
+}
+
+p{
+    color: #fff;
+    font-size: 32pt;
+    animation: run 0.5s 1 ease-in forwards;
+    margin-left: 25%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes run {
+    from{
+        transform: translate(200vh, 0);
+    }
+
+    to{
+        transform: translate(0, 0);
+    }
+}
