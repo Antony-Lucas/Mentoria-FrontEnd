@@ -12,35 +12,36 @@
     <header>
         <p>Formulário</p>
     </header>
-    <form action="index.php" method="POST">
+    <form name="formain" action="#" method="POST" onsubmit="return validate(this)">
         <div>
             <label for="fnome">Nome:</label>
-            <input type="text">
+            <input name="nome" class="set" type="text" placeholder="Ex: antony lucas"  id="nome">
         </div>
         
         <div>
             <label for="fidade">Idade:</label>
-            <input type="text">
+            <input name="idade" class="set" type="text" pattern="[0-9]{2}" placeholder="Ex: 18" maxlength="2" id="age">
         </div>
 
         <div>
-            <label for="fcpf">CPF</label>
-            <input type="text">
+            <label for="fcpf">CPF:</label>
+            <input name="cpf" class="set" type="text" placeholder="Apenas Números" pattern="[0-9](?=.*-){14}" id="cpf" maxlength="14" oninput="formatacpf(this)">
         </div>
 
        <div>
            <label for="fsexo">Sexo:</label>
        </br>
-            <label for="frbmasc">Masculino</label>
-            <input type="radio" name="frbmasc" id="rbmasc">
-            <label for="frbfem">Feminino</label>
-            <input type="radio" name="frbfem" id="rbmasc">
+            <div class="div1">
+                <label><input class="rbs" type="radio" name="sexo" value="M">Masculino</label>
+
+                <label><input class="rbs" type="radio" name="sexo" value="F">Feminino</label>
+            </div>
        </div>
 
         <div>
-            <label for="festado">Estado</label>
-            <select name="Estados" id="select_state">
-                <option value="">Selecione um Estado</option>
+            <label class="state" for="festado">Estado:</label>
+            <select name="estados" id="select_state">
+                <option value="Selecione um Estado">Selecione um Estado</option>
                 <option value="PA">Acre</option>
                 <option value="AM">Amapá</option>
                 <option value="AZ">Amazonas</option>
@@ -69,17 +70,19 @@
 
         <div>
             <label for="fsenha">Senha:</label>
-            <input type="text">
+            <input name="senha" class="set" type="password" placeholder="A senha é password" id="password">
         </div>
 
         <div>
             <label for="fcsenha">Confirmar senha:</label>
-            <input type="text">
+            <input name="confirmasenha" class="set" type="password" placeholder="Confirme password"> 
         </div>
 
         <div>
-            <input type="submit">
+            <input  name="send" class="send" type="submit" value="Enviar">
         </div>
     </form>
+
+    <script src="main.js"></script>
 </body>
 </html>

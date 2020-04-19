@@ -10,31 +10,99 @@ body{
 }
 
 header{
-    background-color: rgb(253, 80, 49);
+    background: linear-gradient(to right, #0296f3, purple);
     display: absolute;
     padding: 2em;
     transition: 0.5s;
-
 }
 
 p{
     color: #fff;
     font-size: 32pt;
-    animation: run 0.5s 1 ease-in forwards;
     margin-left: 25%;
 }
 
 form{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 80vh;
+    width: 30%;
+    transform: translate(25vw, 0);
 }
 
-@keyframes run {
-    from{
-        transform: translate(200vh, 0);
-    }
+form div{
+    padding: 15px;
+    display: inline-block;
+}
 
-    to{
-        transform: translate(0, 0);
-    }
+form div:first-of-type .set{
+    text-transform: capitalize;
+}
+
+form div:nth-child(4) div{
+    border-right: solid 10px #c5c5c5;
+}
+
+.set{
+    outline: none;
+    width: 25em;
+    height: 0.8em;
+    padding: 15px;
+    border: none;
+    border-right: solid 10px #0296f3;
+    display: flex;
+    font-size: 14pt;
+    color: rgb(129, 129, 129);
+    background-color: rgba(102, 102, 102, 0.205);
+}
+
+
+form div label{
+    font-size: 16pt;
+}
+
+.frb{
+    font-size: 12pt;
+    margin-top: 5px;
+}
+
+.rbs{
+    margin: 15px;
+}
+
+select{
+    padding: 8px;
+    font-size: 12pt;
+    outline: none;
+    border: none;
+    border-right: solid 10px #0296f3;
+    background-color: rgba(102, 102, 102, 0.205);
+}
+
+.state{
+    margin-right: 11em;
+}
+
+select option{
+    border-radius: 10px;
+    outline: none;
+}
+
+#select_state{
+    font-family: "Baloo Thambi 2";
+}
+
+.send{
+    background-color: #0296f3;
+    border: none;
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 14pt;
+    outline: none;
+    cursor: pointer;
 }
