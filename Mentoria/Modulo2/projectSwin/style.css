@@ -1,0 +1,95 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic);
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #ddd;
+    font-family: "Helvetica neue", sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: #0183cecc;
+    padding: 3%;
+    display: flex;
+    justify-content: space-around;
+}
+
+header h1{
+    font-family: "Open sans";
+    font-weight: bold;
+    font-size: 38pt;
+    color: #fff;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+   
+}
+
+.dbtn{
+    background-color: transparent;
+    color: #fff;
+    padding: 15px 26px;
+    font-size: 14pt;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0,0.2);
+    z-index: 1;
+    padding: 50px 15px;
+    border-radius: 5px;
+}
+
+.dropdown-content input{
+    color: #000;
+    padding: 12px 16px;
+    display: block;
+    width: 10vw;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.486);
+    outline: none;
+}
+
+.dropdown a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.514);
+    font-size: 10pt;
+    margin-top: 50px;
+    font-style: italic;
+}
+
+.dropdown-content input:hover{background-color: #fff;}
+
+.dropdown:hover .dropdown-content{display: block;}
+
+.dropdown:hover .dbtn{
+    background-color: #fff;
+    color: #0182ce;
+}
+
+.register{
+    font-style: normal;
+    font-size: 12pt;
+    color: #0182ce;
+    background-color: #fff;
+    text-decoration: none;
+    padding: 18px;
+    border-radius: 5px;
+}
