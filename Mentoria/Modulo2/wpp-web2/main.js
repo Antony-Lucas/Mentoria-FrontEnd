@@ -13,16 +13,18 @@ msg.addEventListener("keydown", function(e){
         //senão irá retornar o valor digitado para os campos.
         else{
             var elmt = document.createElement('span');
-            elmt.innerHTML = msg.value;
-            
+        
             txto.appendChild(elmt);
                 
             if (contar() % 2 == 0){
+                elmt.innerHTML =  msg.value;
                 txty.appendChild(elmt);
             }
             else if(contar() % 2 != 0){
+                elmt.innerHTML =  msg.value;
                 txto.appendChild(elmt);
-            }
+            }   
+            rolling();    
             msg.value = ""; 
         }
     }
@@ -32,6 +34,7 @@ function contar(){
     return document.querySelectorAll("span").length;
 }
 
-function quebra(){
-    return msg.value.length;
+function rolling(){
+    var roll = document.getElementById("textarea");
+    roll.scrollTop = contar() * 100;
 }

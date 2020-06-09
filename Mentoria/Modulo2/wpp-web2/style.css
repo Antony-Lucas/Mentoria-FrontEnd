@@ -148,7 +148,8 @@ section{
 .card div p {
     position: relative;
     bottom: 10px;
-    font-size: 14pt;
+    font-size: 11pt;
+    color: rgba(51, 51, 51, 0.719);
 }
 
 .container-right{
@@ -182,7 +183,7 @@ section{
 }
 
 .info span img{
-    margin-left: 25px;
+    margin-left: 28px;
 }
 
 .textarea{
@@ -191,6 +192,16 @@ section{
     height: 48em;
     width: 61.98em;
     overflow: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+::-webkit-scrollbar{width: 5px;}
+::-webkit-scrollbar-thumb{background: rgba(51, 51, 51, 0.336);
+    transition: 0.9s;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: rgba(0, 0, 0, 0.308);
 }
 
 .day{
@@ -199,91 +210,63 @@ section{
     align-items: center;
 }
 
-.textarea div p:first-of-type{
+.day p{
     background-color: rgba(225, 245, 254, 0.92);
     font-size: 12.5pt;
     padding: 5px 15px 6px;
     border-radius: 5px;
 }
 
-.conversation{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: space-around;
-}
-
-.conversation div:nth-child(1){
-    background-color: #fff;
-    font-size: 11pt;
-    color: rgba(51, 51, 51, 0.637);
-    padding: 6px 6px 8px 9px;
-}
-
-/*.textarea div{
-    margin-top: 5px;
-}
-
 #textyou{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-top: 100px;
+    margin-right: 75px;
 }
 
 #textyou span{
-    padding: 6px 12px 8px 9px;
-    font-size: 14.2pt;
+    padding: 9px 22px 11px 11px;
+    font-size: 11pt;
     background-color: #dcf8c6;
+    width: max-content;
+    color: rgba(51, 51, 51, 0.829);
     border-radius: 8px 0 8px 8px;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 30%;
-    margin-bottom: 40px;
-    margin-left: 50px;
-}
-
-#textyou img{
-    float: right;
-    margin-right: 42px;
-    margin-top: 10px;
-}
-
-#textyou span::before{
-    content: "12:30";
-    color: rgba(51, 51, 51, 0.534);
-    font-size: 10pt;
-    margin-right: 15px;
+    display: block;
+    margin-top: 1.5vh;
+    margin-bottom: 60px;
+    min-width: auto;
+    max-width: 15vw;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-align: right;
 }
 
 #textother{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    overflow: hidden;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-left: 75px;
 }
 
 #textother span{
-    padding: 6px 15px 8px 9px;
-    font-size: 12pt;
+    padding: 9px 11px 11px 22px;
+    font-size: 11pt;
     background-color: #fff;
+    width: max-content;
+    color: rgba(51, 51, 51, 0.829);
     border-radius: 0 8px 8px 8px;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 30%;
-    margin-bottom: 50px;
-    margin-right: 100px;
+    display: inline-block;
+    margin-top: 1.5vh;
+    margin-bottom: 60px;
+    min-width: auto;
+    max-width: 15vw;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-align: left;
 }
-
-#textother span::after{
-    content: "12:30";
-    font-size: 10pt;
-    color: rgba(51, 51, 51, 0.534);
-    margin-right: 15px;
-}*/
 
 .message{
     background-color: rgb(241, 241, 241);
