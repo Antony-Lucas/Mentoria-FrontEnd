@@ -187,7 +187,7 @@ section{
 }
 
 .textarea{
-    background-image: url("SMB_WEB.png");
+    background-image: url("imgs/SMB_WEB.png");
     background-repeat: repeat-y;
     height: 48em;
     width: 61.98em;
@@ -243,6 +243,10 @@ section{
     text-align: right;
 }
 
+#textyou span:hover{
+    content: url("icons/baixar.svg");
+}
+
 #textother{
     display: flex;
     flex-direction: column;
@@ -266,6 +270,11 @@ section{
     word-wrap: break-word;
     overflow: hidden;
     text-align: left;
+}
+
+svg{
+   width: 2px;
+   height: 2px;
 }
 
 .message{
