@@ -243,9 +243,6 @@ section{
     text-align: right;
 }
 
-#textyou span:hover{
-    content: url("icons/baixar.svg");
-}
 
 #textother{
     display: flex;
@@ -272,9 +269,26 @@ section{
     text-align: left;
 }
 
-svg{
-   width: 2px;
-   height: 2px;
+.dropdown{
+    display: inline-block;
+    opacity: 0;
+    position: relative;
+    transition: 0.2s;
+  }
+  
+.dropdown:hover{
+    opacity: 60;
+  }
+  
+.dropbtn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+  
+.dropbtn:hover, .dropbtn:focus{
+    background-color: #2980b9; 
 }
 
 .message{

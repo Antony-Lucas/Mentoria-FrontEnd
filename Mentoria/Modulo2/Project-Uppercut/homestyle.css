@@ -1,0 +1,83 @@
+@import url(https://fonts.googleapis.com/css?family=Metal+Mania:regular);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300italic,regular,italic,700,700italic);
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #000;
+}
+
+header{
+    background: linear-gradient(to right, rgba(75, 75, 75, 0.377), #000);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header span{
+    font-family: "Metal Mania";
+    font-size: 35pt;
+    color: #f2861d;
+    padding: 4px 20px;
+    margin-left: 23.5%;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+}
+
+li{
+    cursor: pointer;
+    font-size: 14pt;
+    font-family: "Roboto Condensed";
+    color: #f2861d;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+h1{
+    color: #f2861d;
+    display: flex;
+    justify-content: center;
+    margin: 4% 0;
+    font-family: "Roboto Condensed";
+    font-size: 32pt;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+.card1, .card2, .card3{
+    background-size: cover;
+    width: 14vw;
+    height: 60vh;
+    transition: 0.5s;
+    border: 2px solid #f2861d;
+    border-radius: 5px;
+}
+
+.card1{
+    background-image: url("imgs/mk11.jpg");
+    background-size: cover;
+}
+
+.card2{
+    background-image: url("imgs/mkx.jpg");
+    background-size: cover;
+}
+
+.card3{
+    background-image: url("imgs/mk9.jpg");
+    background-size: cover;
+}
+
+.card1:hover, .card2:hover, .card3:hover{
+    width: 15vw;
+}

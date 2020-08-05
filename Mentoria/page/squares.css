@@ -1,0 +1,79 @@
+.squares{
+    display: flex;
+    margin-top: 8vh;
+    scrollbar-color: transparent transparent;
+    scrollbar-width: 0;
+    width: 80vw;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.squares::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+}
+
+.squares::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+.squares::-webkit-scrollbar-thumb{
+    background: rgba(0, 0, 0, 0.336);
+    border: none;
+}
+
+.squares > div{
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 500px;
+    margin-right: 2vw;
+    padding: 8em 6em; 
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+}
+.squares span{
+    color: #fff;
+    
+}
+
+.squares div:nth-child(1){
+    background-color: rgb(128, 50, 255);
+    border-radius: 35px;
+    width: 20em;
+    height: 1em;
+    margin-right: 30px;
+}
+
+.squares div:nth-child(2){
+    background-color: rgb(255, 177, 255);
+    border-radius: 35px;
+    width: 20em;
+    height: 1em;
+    margin-right: 30px;
+}
+
+.squares div:nth-child(3){
+    background-color: #00d6d6;
+    border-radius: 35px;
+    width: 20em;
+    height: 1em;
+    margin-right: 30px;
+}
+
+.squares div:nth-child(4){
+    background-color: #d68b00;
+    border-radius: 35px;
+    width: 20em;
+    height: 1em;
+}
+
+.squares div:nth-child(5){
+    background-color: #00d62e;
+    border-radius: 35px;
+    width: 20em;
+    height: 1em;
+}

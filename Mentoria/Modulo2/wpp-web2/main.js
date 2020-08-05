@@ -14,15 +14,13 @@ msg.addEventListener("keydown", function(e){
         else{
             var elmt = document.createElement('span');
         
-            txto.appendChild(elmt);
-                
             if (contar() % 2 == 0){
                 elmt.innerHTML =  msg.value;
-                txty.appendChild(elmt);
-            }
-            else if(contar() % 2 != 0){
-                elmt.innerHTML =  msg.value;
                 txto.appendChild(elmt);
+            }
+            else if(contar() % 2 != 0){              
+                elmt.innerHTML =  msg.value;
+                txty.appendChild(elmt);   
             }   
             rolling();    
             msg.value = ""; 
