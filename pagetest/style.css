@@ -1,0 +1,351 @@
+@import url(https://fonts.googleapis.com/css?family=Archivo+Black:regular);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,regular,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Epilogue:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+body{
+    display: flex;
+}
+
+.Navbar{
+    padding: 1% 2% 0 2% ;
+    font-family: "helvetica neue", sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.Navbar h1{
+    font-size: 30pt;
+    font-family: "Archivo Black";
+}
+
+.Discover{
+    margin-top: 7vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.Discover a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    padding: 2vh 0 2.5vh 0;
+    width: 8vw;
+    margin-left: -16%;
+    transition: 0.2s;
+}
+
+.Discover a svg{
+    padding: 0 20% 0 0;
+    margin: -5px;
+    margin-left: 15%;
+}
+
+.Library{
+    margin-top: 4vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.Library a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    padding: 2vh 0 2.5vh 0;
+    width: 8vw;
+    margin-left: -15%;
+    transition: 0.2s;
+}
+
+.Library a svg{
+    padding: 0 20% 0 0;
+    margin: -5px;
+    margin-left: 15%;
+}
+
+h4{
+    font-family: "Roboto Slab";
+    text-transform: uppercase;
+    color: rgba(102, 102, 102, 0.466);
+}
+
+.Library a:hover{
+    background-color: rgb(32, 32, 32);
+    color: #fff;
+    fill: #fff;
+    border-radius: 35px;
+}
+
+.upgrade{
+    margin-top: 60vh;
+    background-color: #00d6d6;
+    color: #fff;
+    border: none;
+    border-radius: 35px;
+    padding: 17px;
+    font-size: 12pt;
+    outline: none;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-left: -15%;
+}
+
+.upgrade:hover{
+    background-color: #fff;
+    color: #00d6d6;
+    border: 1px solid #00d6d6;
+}
+
+.main{
+    padding: 2% 0 0 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard{
+    display: flex;
+}
+
+.dashboard input{
+    font-family: "Roboto Slab";
+    font-size: 15pt;
+    width: 25vw;
+    height: 5vh;
+    border: none;
+    outline: none;
+    color: rgba(102, 102, 102, 0.466);
+}
+
+.profile{
+    display: flex;
+    cursor: pointer;
+    margin-left: 48vw;
+}
+
+.profile img{
+    height: 40px;
+    border-radius: 40px;
+}
+
+span{
+    font-family: "helvetica neue", sans-serif;
+    font-weight: bold;
+    padding: 13px;
+}
+
+
+.content{
+    margin-top: 1vh;
+    display: flex;
+    flex-direction: row;
+}
+
+h2{
+    margin-top: 10vh;
+    font-size:48pt;
+    font-family: "Archivo Black";
+}
+
+.books{
+    display: flex;
+}
+
+.description{
+    display: flex;
+    flex-direction: row;
+    margin-right: 3vw;
+    padding-bottom: 6em;
+}
+
+.description img{
+    border-radius: 20px;
+    margin-right: 3vw;
+    cursor: pointer;
+    width: 35%;
+}
+
+.description div{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 5vh;
+}
+
+.description div span:nth-child(1){
+    color: rgba(102, 102, 102, 0.377);
+    font-size: 26pt;
+    font-family: "Epilogue";
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.description div h3{
+    font-family: "Archivo Black";
+    font-size: 22pt;
+    margin: 0;
+    margin-left: 0.5vw;
+    cursor: pointer;
+}
+
+.description div span:nth-child(3){
+    font-family: "Epilogue";
+    font-size: 15pt;
+    font-weight: normal;
+    color: rgba(102, 102, 102, 0.445);
+    cursor: pointer;
+}
+
+.description div span:nth-child(4){
+    padding: 15px;
+    width: 5vw;
+    height: 2.5vh;
+    text-align: center;
+    border-radius: 35px;
+    cursor: pointer;
+}
+
+.tag, .tag3{
+    color: #00d6d6;
+    background-color: #00d6d615;
+}
+
+.tag1{
+    color: rgb(189, 189, 54);
+    background-color: rgba(189, 189, 54, 0.103);
+}
+
+.tag2{
+    color: rgb(177, 93, 107);
+    background-color: rgba(255, 157, 173, 0.103);
+}
+.player{
+    background-color: rgba(102, 102, 102, 0.151);
+    border-radius: 100px;
+    position: relative;
+    bottom: 9em;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.name{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.name div{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin: 2em;
+    margin-top: 6vh;
+}
+
+.name div h3{
+    font-size: 15pt;
+    font-family: "Archivo Black";
+}
+
+.name div span{
+    padding: 0;
+    font-family: "Epilogue";
+    font-size: 12pt;
+    font-weight: normal;
+    color: rgba(102, 102, 102, 0.445);
+    cursor: pointer;
+}
+
+.twc{
+    border-radius: 10px;
+    width: 15%;
+    margin-left: 3vw;
+    margin-top: 6vh;
+}
+
+.name a{
+    margin-top: 7vh;
+    margin-left: 4vw;
+    height: 35px;
+    width: 40px;
+}
+
+.control{
+    display: flex;
+    justify-content: center;
+}
+
+.control div{
+    padding: 2vh 3vw 0 3vw;
+}
+
+.control div img:nth-child(1),
+.control div img:nth-child(3){
+    padding: 20px;
+    cursor: pointer;
+}
+
+.control div img:nth-child(2){
+    width: 35px;
+    background-color: #001616;
+    padding: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.control span{
+    margin-top: 4vh;
+    font-family: "Epilogue";
+}
+
+.sumary{
+    background-color: #001616;
+    height: 90%;
+    width: 22vw;
+    padding: 2.5em;
+    border-radius: 100px;
+    margin-top: 5vh;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.play{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.play span img{
+    padding-right: 3em;
+}
+
+.play span{
+    margin: 2em;
+}
+
+.play span:nth-child(2){
+    color: #00d6d6;
+    display: flex;
+    align-items: center;
+}
+
+.play span:nth-child(2) img{
+    border: 2px solid #00d6d6;
+    border-radius: 60px;
+    padding: 20px;
+    position: relative;
+    right: 25px;
+}
+.time{
+    display: flex;
+    flex-direction: column;
+}
+
+.time span{
+    padding: 3.3em;
+    color: rgba(156, 156, 156, 0.445);
+}
+
+.time span:nth-child(2){
+    color: #fff;
+}
